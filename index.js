@@ -9,7 +9,7 @@ const app = express();
 
 app.use(bodyParser.json());
 
-const port = process.env.PORT;
+const port = process.env.PORT || 7000;
 
 const url = process.env.MONGO_URL;
 
