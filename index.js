@@ -47,6 +47,7 @@ const productContainRouter = require('./Router/productContain.router');
 const reviewRouter = require('./Router/reviews.router');
 const userRouter = require('./Router/users.router');
 const favoritesRouter = require('./Router/favorite.router');
+const cartRouter = require('./Router/cart.router');
 
 app.use('/api/categories', categoryRouter);
 app.use("/api/subCategories", subCategoryRouter);
@@ -55,6 +56,7 @@ app.use("/api/productContain", productContainRouter);
 app.use("/api/products", reviewRouter);
 app.use("/api/users", userRouter);
 app.use("/api/favorites", favoritesRouter);
+app.use("/api/cart", cartRouter);
 
 app.all("*", (req, res, next) => {
 
