@@ -7,7 +7,7 @@ const httpStatusText = require("../utils/httpStatusText");
 const User = require('../models/users.model');
 
 const verifyToken = asyncwrapper(async (req, res, next) => {
-    
+
     let token;
     
     //getting token and check of it's here
